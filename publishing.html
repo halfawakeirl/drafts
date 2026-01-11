@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <title>Drafts — Publishing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <a class="logo" href="home.html">Drafts</a>
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a href="archive.html">Archive</a>
+      <a class="active" href="publishing.html">Publishing</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card">
+      <h1 class="h1">Publishing</h1>
+      <p class="lead">Write a draft.</p>
+
+      <div class="rules">
+        <strong>Reminder:</strong> no names, schools, usernames, phone numbers, emails, addresses, or identifying details.
+      </div>
+
+      <label class="label" for="message">Unsent message</label>
+      <textarea id="message" class="textarea" rows="5" placeholder="Write the message you never sent..."></textarea>
+
+      <label class="label" for="thought">Lingering thought (optional)</label>
+      <textarea id="thought" class="textarea" rows="3" placeholder="Any extra thoughts connected to that message..."></textarea>
+
+      <div class="row">
+        <div class="col">
+          <label class="label" for="tag">Emotion tag</label>
+          <select id="tag" class="select">
+            <option value="unspecified">Unspecified</option>
+            <option value="regret">Regret</option>
+            <option value="gratitude">Gratitude</option>
+            <option value="sadness">Sadness</option>
+            <option value="anger">Anger</option>
+            <option value="relief">Relief</option>
+            <option value="love">Love</option>
+            <option value="closure">Closure</option>
+          </select>
+        </div>
+        <div class="col">
+          <label class="label">Visibility</label>
+          <div class="pill small">Anonymous by default</div>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <button id="postBtn" class="btn primary">Post to Archive</button>
+        <button id="seedBtn" class="btn">Add sample drafts</button>
+      </div>
+
+      <p id="formMsg" class="fineprint"></p>
+    </section>
+
+    <section class="card">
+      <h2 class="h2">What happens after you post?</h2>
+      <ul class="bullets">
+        <li>Your draft appears in the Archive (local demo version).</li>
+        <li>Other people can only respond with <strong>“I relate”</strong>.</li>
+        <li>No comments, no likes, no profiles — just acknowledgment.</li>
+      </ul>
+
+      <a class="btn" href="archive.html">Go to Archive</a>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span class="muted">If something feels too personal, rewrite it without details.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

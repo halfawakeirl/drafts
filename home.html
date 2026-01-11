@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drafts — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <a class="logo" href="home.html">Drafts</a>
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a href="archive.html">Archive</a>
+      <a href="publishing.html">Publishing</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card">
+      <h1 class="h1">Home</h1>
+      <p class="lead">
+      Drafts is an anonymous place for messages left unsent, along with the thoughts they carried.
+      </p>
+
+      <div class="rules">
+        <strong>Quick rule:</strong> no real names, schools, usernames, phone numbers, emails, or identifying details.
+      </div>
+
+      <div class="cta-row">
+        <a class="btn primary" href="publishing.html">Write a Draft</a>
+        <a class="btn" href="archive.html">Explore the Archive</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num" id="statPosts">—</div>
+          <div class="stat-label">total drafts</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statRelates">—</div>
+          <div class="stat-label">total “I relate”</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="h2">Featured drafts</h2>
+      <p class="muted">A small sample from the archive (local demo).</p>
+      <div id="featuredList" class="list"></div>
+      <div class="spacer"></div>
+      <a class="link" href="archive.html">Go to Archive →</a>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span class="muted">Drafts is a place for unsent words.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

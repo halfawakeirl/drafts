@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drafts — Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <a class="logo" href="home.html">Drafts</a>
+    <nav class="nav">
+      <a href="about.html">About</a>
+      <a class="active" href="archive.html">Archive</a>
+      <a href="publishing.html">Publishing</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="archive-top">
+        <div>
+          <h1 class="h1">Archive</h1>
+          <p class="muted">Search and filter drafts. Tap “I relate” to acknowledge.</p>
+        </div>
+        <a class="btn primary" href="publishing.html">Write a Draft</a>
+      </div>
+
+      <div class="controls">
+        <input id="searchInput" class="input" type="text" placeholder="Search drafts (keywords)..." />
+        <select id="filterTag" class="select">
+          <option value="all">All tags</option>
+          <option value="unspecified">Unspecified</option>
+          <option value="regret">Regret</option>
+          <option value="gratitude">Gratitude</option>
+          <option value="sadness">Sadness</option>
+          <option value="anger">Anger</option>
+          <option value="relief">Relief</option>
+          <option value="love">Love</option>
+          <option value="closure">Closure</option>
+        </select>
+        <select id="sortBy" class="select">
+          <option value="newest">Newest</option>
+          <option value="relate">Most related</option>
+        </select>
+        <button id="clearBtn" class="btn">Clear</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div id="archiveList" class="list"></div>
+      <p id="emptyMsg" class="muted"></p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span class="muted">Local demo: drafts are stored in your browser (localStorage).</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
